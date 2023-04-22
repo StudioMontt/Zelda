@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>M2 - FancyBox</title>
+		<link rel="stylesheet" href="./index.css" />
+
+		<!-- FancyBox -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+		/>
+	</head>
+	<body>
+		<h1>EJERCICIO INDIVIDUAL N°6</h1>
+		<h2>Leyenda de Zelda</h2>
+		<p href="./img/link.png" data-fancybox data-caption="Versiones de Link">
+			<img src="./img/link.png" alt="Versiones de Link" width="300" height="200" />
+		</p>
+		<br />
+		<div>
+			<button
+				class="btn"
+				data-fancybox
+				data-type="iframe"
+				data-src="https://youtu.be/0UxX1qupg6s"
+			>
+				Ver video
+			</button>
+			<p>Zelda - Musica Relajante y Paisajes</p>
+		</div>
+		<div>
+			<button
+				class="btn btn--2"
+				data-fancybox
+				data-type="iframe"
+				data-src="https://nassimsoftware.github.io/zeldabotwstreetview/"
+			>
+				Ver mapa
+			</button>
+			<p>El Google Maps de Zelda Breath of The Wild</p>
+		</div>
+	</body>
+	<!-- FancyBox -->
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+	<script>
+		Fancybox.bind('[data-fancybox]', {});
+	</script>
+	<footer>
+		<span>© 2023 StudioMontt
+	</footer>
+</html>
